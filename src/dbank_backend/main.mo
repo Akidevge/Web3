@@ -6,7 +6,9 @@ import Float "mo:base/Float";
 actor Dbank
 {
   stable var initial:Float = 100;
+  // initial:=100;
   stable var startTime = Time.now();
+  // startTime := Time.now();
   public func addBal(amt:Float){
     initial+=amt;
     Debug.print(debug_show (initial));
